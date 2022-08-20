@@ -1,0 +1,39 @@
+extends layout
+
+block layout-content
+ nav.navbar.navbar-expand-lg.bg-light
+  .container-fluid
+    a.navbar-brand(href='#') MOVIE FLEX
+    button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarNavAltMarkup.collapse.navbar-collapse
+      .navbar-nav
+        a.nav-link.active(aria-current='page' href='#') 
+        a.nav-link(href='/info') HOLLYWOOD NEWS
+        a.nav-link(href='/') HOME
+        a.nav-link.disabled 
+ section 
+    h2.div3 LIVE CRYPTO PRICE
+     
+     each c in crypto 
+        table
+         tr
+             td Logo
+             td Coin-Name
+             td Graph
+             td Price
+             td MarketCapital
+         tr
+             td.logo  
+                img#img2(src=c.Logo, alt="")
+
+             td.name #{c.CoinName} 
+
+             td.graph 
+                img#img(src=c.Graph, alt="")
+
+             td.price #{c.Price} 
+
+             td.mc #{c.MarketCapital}
+       
+

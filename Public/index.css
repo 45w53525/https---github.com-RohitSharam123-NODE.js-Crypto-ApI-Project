@@ -1,0 +1,163 @@
+ 
+
+  #form1,.h1{
+
+    text-align: center;
+    color: white;
+    margin: 3.125rem;
+    font-family: 'Alfa Slab One', cursive;
+  
+ }
+ .h1{
+
+      margin-top: 3.125rem;
+      padding-top: 30px;
+ }
+
+ .body{
+    background-color: #000;
+ }
+
+
+ .div2{
+   max-width: 10.75rem;
+   border-radius: 0.75rem;
+   
+ }
+.div1{
+   color: #fff;
+   font-size: 1.8em;
+   font-family: 'Times New Roman', Times, serif;
+   text-align: center;
+   margin-bottom: 60px;
+}
+
+
+.sec{
+  display:flex;
+  width:100;
+  overflow-y: hidden;
+  overflow-x: scroll; 
+  margin-top: 150px;
+}
+
+.sec::-webkit-scrollbar{
+  display: none;
+}
+img{
+  padding: 20px;
+  transition: transform 450ms;
+  
+}
+img:hover{
+  transform: scale(1.08);
+  
+}
+
+.div3{
+font-family: 'Alfa Slab One', cursive;
+color: white;
+font-size: larger;
+margin: 2.5rem;
+text-align: center;
+
+
+}
+
+.container{
+display: flex;
+flex-direction: row;
+}
+
+
+table, th, td {
+  border:1px solid white;
+}
+
+.graph {
+  text-align: center;
+  background-color:white;
+}
+.price{
+ 
+   width: 200px;
+  height: 200px;
+
+}
+.mc{
+ 
+  width: 200px;
+  height: 200px;
+}
+
+.name{
+  width: 200px;
+  height: 200px;
+
+}
+
+table{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+ #img{
+  width:150px;
+  height: 100px;
+  padding:0px
+}
+#img2{
+  width: 100px;
+  height: 100px;
+} 
+
+#img4{
+  width: 300px;
+  height: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+  
+    .sec {
+     
+        flex-direction: column ;
+        text-align: center;
+      }
+
+  }
+@media only screen and (max-width: 1000px) {
+
+  .sec {
+
+    flex-direction: column;
+    text-align: center;
+  }
+
+}
+@media only screen and (max-width: 600px) {
+
+  .container {
+    
+    flex-direction: column;
+    text-align: center;
+  }
+ #img4{
+  margin-left: 9.375rem;
+ }
+  
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .container {
+
+    flex-direction: column;
+    
+  }
+  #img4{
+    margin-left: 9.375rem;
+  }
+
+
+}

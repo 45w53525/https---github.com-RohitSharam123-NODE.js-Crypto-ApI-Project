@@ -1,0 +1,24 @@
+extends layout
+
+block layout-content
+ nav.navbar.navbar-expand-lg.bg-light
+  .container-fluid
+    a.navbar-brand(href='#') MOVIE FLEX
+    button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarNavAltMarkup.collapse.navbar-collapse
+      .navbar-nav
+        a.nav-link.active(aria-current='page' href='http://localhost:8888') HOME
+        a.nav-link(href='/crypto') LIVE CRYPTO PRICE 
+        a.nav-link.disabled 
+
+ section
+      
+         h2.div3 HEADLINES
+        
+         each i in items
+           div.container
+             img#img4(src=i.image.url, alt="", width=400 ,height=400)
+             br
+             br
+             div.div3 #{i.body}

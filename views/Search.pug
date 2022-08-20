@@ -1,0 +1,26 @@
+extends layout
+
+block layout-content
+  nav.navbar.navbar-expand-lg.bg-light
+   .container-fluid
+    a.navbar-brand(href='#') MOVIE FLEX
+    button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarNav.collapse.navbar-collapse
+       ul.navbar-nav
+        li.nav-item
+          a.nav-link.active(aria-current='page' href='http://localhost:8888') Home
+        li.nav-item
+          a.nav-link(href='/info') HOLLYWOOD NEWS
+        li.nav-item
+          a.nav-link(href='/crypto') LIVE CRYPTO PRICE 
+        li.nav-item
+          a.nav-link.disabled 
+  h1.h1 MOVIE FLIX
+  section.sec
+     each m in movies
+       div  
+         if m.i
+            div.div2 
+            img(src=m.i.imageUrl, alt="", width=300)
+               

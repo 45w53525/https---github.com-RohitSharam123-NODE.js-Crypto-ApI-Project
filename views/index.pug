@@ -1,0 +1,27 @@
+extends layout
+
+block layout-content
+ nav.navbar.navbar-expand-lg.bg-light
+  .container-fluid
+    a.navbar-brand(href='#') MOVIE [Poster Hub] FLEX
+    button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarNavAltMarkup.collapse.navbar-collapse
+      .navbar-nav
+        a.nav-link.active(aria-current='page' href='#') 
+        a.nav-link(href='/info') HOLLYWOOD NEWS
+        a.nav-link(href='/Crypto') LIVE CRYPTO PRICE 
+        a.nav-link.disabled 
+
+ form#form1(action='/Search')
+  label(for='Search') Search:
+  input#fname(type='text' name='Search')
+  br
+  br
+  input(type='submit' value='Submit')
+ section.sec
+    each m in movies
+       div 
+         if m.i
+            div.div2 
+            img(src=m.i.imageUrl, alt="", width=250)
